@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <div className='px-12'>
+        <div className='lg:px-12'>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -31,7 +31,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn">Get started</a>
+                    <a href='https://drive.google.com/file/d/1gZGfgLr0TX-uTgLKOyihcwqeNyldHOAE/view' class="btn">Resume</a>
                 </div>
             </div>
         </div>
