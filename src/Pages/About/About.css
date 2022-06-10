@@ -1,0 +1,12 @@
+.skill-img img {
+    width: 70px;
+    height: 70px;
+
+
+}
+
+/* .skill-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: ;
+} */
