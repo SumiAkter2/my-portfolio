@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box
+}
+
+.container {
+
+    border-radius: 10px;
+    width: 100%;
+    background-color: #ddd;
+}
+
+.skills {
+
+    text-align: right;
+    border-radius: 10px;
+    color: white;
+    margin: 10px 0px;
+}
+
+.html {
+
+    width: 95%;
+    background-color: rgb(110, 64, 237);
+}
+
+.css {
+    width: 90%;
+    background-color: rgb(110, 64, 237);
+}
+
+.tailwind {
+    width: 94%;
+    background-color: rgb(110, 64, 237);
+}
+
+.js {
+    width: 75%;
+    background-color: rgb(110, 64, 237)
+}
+
+.php {
+    width: 80%;
+    background-color: rgb(110, 64, 237);
+}

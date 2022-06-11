@@ -1,8 +1,6 @@
 import React from 'react';
 import Projects from './Projects';
-// import img1 from '../../assect/Screenshot_26.png'
-// import img2 from '../../assect/Screenshot_27.png'
-// import img3 from '../../assect/Screenshot_28.png'
+
 
 const Project = () => {
     const allProject = [
@@ -10,8 +8,15 @@ const Project = () => {
         {
             id: 3,
             img: 'https://i.ibb.co/LJg7RTZ/Screenshot-26.png',
-            describe: '',
-            name: 'bes',
+            describe: 'A tools manufacturing site.where people buy different kinds of tools and get review.',
+            name: 'Best Tools co',
+
+        },
+        {
+            id: 1,
+            img: 'https://i.ibb.co/bFFCPVd/Screenshot-27.png',
+            name: 'The Car Land',
+            describe: 'There is lorem',
 
         },
         {
@@ -21,13 +26,7 @@ const Project = () => {
             name: 'bes',
 
         },
-        {
-            id: 1,
-            img: 'https://i.ibb.co/bFFCPVd/Screenshot-27.png',
-            name: 'bes',
-            describe: '',
 
-        },
 
         {
             id: 2,
@@ -40,7 +39,7 @@ const Project = () => {
     ]
     return (
         <div>
-            <h1 className='text-5xl text-primary font-bold text-center'>My All Projects</h1>
+            <h1 className='text-5xl text-primary font-bold text-center my-24'>My All Projects</h1>
             <div className='grid lg:grid-cols-3 gap-6 my-12 px-12'>
                 {
                     allProject.map(project => <Projects key={project.id}

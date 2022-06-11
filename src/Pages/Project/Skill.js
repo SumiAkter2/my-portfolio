@@ -1,5 +1,6 @@
 import React from 'react';
 import SkillBar from 'react-skillbars';
+import './Skill.css'
 const Skill = () => {
 
     const skills = [
@@ -9,21 +10,34 @@ const Skill = () => {
         { type: "CSS", level: 80 },
         { type: "JavaScript", level: 70 },
         { type: "React.js", level: 80 },
+    ]
 
 
-    ];
-    const colors = {
-        bar: 'gray',
-
-        title: {
-            text: 'white', background: 'indigo'
-        }
-
-    }
 
     return (
-        <div className='p-4'>
-            <SkillBar skills={skills} colors={colors} height={'2vh'} animationDuration={3000} />
+        <div>
+            <p className=' text-white'>Html</p>
+            <div class="container">
+                <div class="skills html">95%</div>
+            </div>
+            <p className=' text-white'>Tailwind</p>
+            <div class="container">
+                <div class="skills tailwind">94%</div>
+            </div>
+            <p className=' text-white'>CSS</p>
+            <div class="container">
+                <div class="skills css">90%</div>
+            </div>
+
+            <p className=' text-white'>JavaScript</p>
+            <div class="container">
+                <div class="skills js">75%</div>
+            </div>
+
+            <p className=' text-white'>React</p>
+            <div class="container">
+                <div class="skills php">80%</div>
+            </div>
         </div>
     );
 };

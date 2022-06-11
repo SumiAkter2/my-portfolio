@@ -10,7 +10,7 @@ const About = () => {
                 <div className='lg:px-12'>
 
                     <h1 className='text-3xl font-bold text-primary text-center my-6 px-12'> Let me introduce myself.</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repudiandae voluptates qui cupiditate cumque omnis voluptas, iure asperiores praesentium commodi voluptatum ipsam ea facere sequi dolor numquam velit incidunt Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laboriosam repellat unde accusamus neque eum, quia sed aspernatur assumenda dolores esse doloremque, quas corrupti minima rerum? Eum quaerat distinctio doloribus?</p>
+                    <p>This is Sumi Akter , a passionate Jr. Web Developer . Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum minus, dolor non eum veniam et rem temporibus enim molestiae sed quam sapiente nisi neque excepturi incidunt rerum est ab praesentium?</p>
                     <div className='my-12 px-12'>
                         <p className='text-white'>
                             <span className='font-bold text-primary pr-4'>  Full Name</span> : Sumi Akter</p>
