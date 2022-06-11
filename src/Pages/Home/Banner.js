@@ -7,7 +7,7 @@ const Banner = () => {
 
             <div className="grid lg:grid-cols-2  justify-items-center  my-24  lg:px-12" >
                 <div className='w-full text-center bg-slate-600    content-center  justify-items-center align-middle'>
-                    <img data-aos="zoom-in-down" src='my img.png' style={{ 'height': '300px' }} className=" mx-auto my-24 " alt='girls-pic' />
+                    <img data-aos="zoom-in-down" src='my img2.jpg' style={{ 'height': '300px' }} className=" mx-auto my-24 " alt='girls-pic' />
                 </div>
                 <div className='pt-12 px-12  '>
                     <h1 className="text-5xl   font-bold uppercase " data-aos="fade-down"> I'm Sumi Akter.</h1>
