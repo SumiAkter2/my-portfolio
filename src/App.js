@@ -8,8 +8,23 @@ import Contact from './Pages/Contact/Contact';
 import Blogs from './Pages/Blogs/Blogs';
 import Project from './Pages/Project/Project';
 import Footer from './Pages/Footer/Footer';
+import Modal from './Pages/Contact/Modal';
+import 'animate.css';
+import { useEffect } from 'react';
+
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 function App() {
+  useEffect = () => {
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: 'ease-in-sine',
+      delay: 100,
+    });
+  }
+
   return (
     <div >
 
@@ -20,6 +35,7 @@ function App() {
         <Route path='/contact' element={<Contact />}></Route>
         <Route path='/blogs' element={<Blogs />}></Route>
         <Route path='/project' element={<Project />}></Route>
+
       </Routes>
       <Footer></Footer>
     </div>

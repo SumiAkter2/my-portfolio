@@ -17,26 +17,26 @@ const Skill = () => {
     return (
         <div>
             <p className=' text-white'>Html</p>
-            <div class="container">
-                <div class="skills html">95%</div>
+            <div className="container">
+                <div className="skills html" data-aos="fade-right">95%</div>
             </div>
             <p className=' text-white'>Tailwind</p>
-            <div class="container">
-                <div class="skills tailwind">94%</div>
+            <div className="container">
+                <div className="skills tailwind" data-aos="fade-right">94%</div>
             </div>
             <p className=' text-white'>CSS</p>
-            <div class="container">
-                <div class="skills css">90%</div>
+            <div className="container">
+                <div className="skills css" data-aos="fade-right">90%</div>
             </div>
 
             <p className=' text-white'>JavaScript</p>
-            <div class="container">
-                <div class="skills js">75%</div>
+            <div className="container">
+                <div className="skills js" data-aos="fade-right">75%</div>
             </div>
 
             <p className=' text-white'>React</p>
-            <div class="container">
-                <div class="skills php">80%</div>
+            <div className="container">
+                <div className="skills php" data-aos="fade-right">80%</div>
             </div>
         </div>
     );

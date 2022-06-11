@@ -39,7 +39,7 @@ const Project = () => {
     ]
     return (
         <div>
-            <h1 className='text-5xl text-primary font-bold text-center my-24'>My All Projects</h1>
+            <h1 className='text-5xl text-primary font-bold text-center my-24 ' data-aos="zoom-in">My All Projects</h1>
             <div className='grid lg:grid-cols-3 gap-6 my-12 px-12'>
                 {
                     allProject.map(project => <Projects key={project.id}

@@ -5,11 +5,11 @@ const About = () => {
     return (
         <div>
             {/* grid h-full px-12 mx-12 card bg-base-300 rounded-box place-items-center */}
-            <h1 className='text-5xl font-bold text-center my-12'>About <span className='text-primary'>Me</span></h1>
+            <h1 className='text-5xl font-bold text-center my-12 ' data-aos="fade-up">About <span className='text-primary'>Me</span></h1>
             <div className='grid lg:grid-cols-2'>
                 <div className='lg:px-12'>
 
-                    <h1 className='text-3xl font-bold text-primary text-center my-6 px-12'> Let me introduce myself.</h1>
+                    <h1 className='text-3xl font-bold text-primary text-center my-6 px-12 ' data-aos="fade-right"> Let me introduce myself.</h1>
                     <p>This is Sumi Akter , a passionate Jr. Web Developer . Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum minus, dolor non eum veniam et rem temporibus enim molestiae sed quam sapiente nisi neque excepturi incidunt rerum est ab praesentium?</p>
                     <div className='my-12 px-12'>
                         <p className='text-white'>
@@ -33,7 +33,7 @@ const About = () => {
                 </div>
 
                 <div className='px-12'>
-                    <h1 className='text-3xl font-bold text-primary text-center my-6'>My Skills</h1>
+                    <h1 className='text-3xl font-bold text-primary text-center my-6 ' data-aos="fade-left">My Skills</h1>
                     <Skill></Skill>
                 </div>
             </div>
