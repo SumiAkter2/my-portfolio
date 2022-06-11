@@ -1,4 +1,5 @@
 import React from 'react';
+import Skill from '../Project/Skill';
 import './About.css'
 const About = () => {
     return (
@@ -8,9 +9,9 @@ const About = () => {
             <div className='grid lg:grid-cols-2'>
                 <div className='lg:px-12'>
 
-                    <h1 className='text-3xl font-bold text-primary text-center my-6'> Let me introduce myself.</h1>
+                    <h1 className='text-3xl font-bold text-primary text-center my-6 px-12'> Let me introduce myself.</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repudiandae voluptates qui cupiditate cumque omnis voluptas, iure asperiores praesentium commodi voluptatum ipsam ea facere sequi dolor numquam velit incidunt Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laboriosam repellat unde accusamus neque eum, quia sed aspernatur assumenda dolores esse doloremque, quas corrupti minima rerum? Eum quaerat distinctio doloribus?</p>
-                    <div className='my-12 '>
+                    <div className='my-12 px-12'>
                         <p className='text-white'>
                             <span className='font-bold text-primary pr-4'>  Full Name</span> : Sumi Akter</p>
                         <p className='text-white'>
@@ -31,23 +32,9 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className=''>
-
-                    <h1 className='text-2xl font-bold text-primary text-center my-6'> My Skills :</h1>
-                    <div className='grid grid-cols-2 lg:grid-cols-4  gap-4   skill-img'>
-
-                        <img src="html.png" alt="html logo" />
-                        <img src="js.png" alt="js logo" />
-                        <img src="css.png" alt="css logo" />
-
-                        <img src="reactBootstrap.png" alt="react-bootstrap logo" />
-                        <img src="bootstrap.png" alt="bootstrap logo" />
-                        <img src="tailwind.png" alt="tailwind logo" />
-                        <img src="react.png" alt=" react logo" />
-                        <img src="mongo.png" alt="bootstrap logo" />
-                        <img src="firebase.png" alt="tailwind logo" />
-                        <img src="heroku.png" alt=" react logo" />
-                    </div>
+                <div className='px-12'>
+                    <h1 className='text-3xl font-bold text-primary text-center my-6'>My Skills</h1>
+                    <Skill></Skill>
                 </div>
             </div>
         </div>
