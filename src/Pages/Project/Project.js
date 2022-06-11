@@ -1,34 +1,41 @@
 import React from 'react';
 import Projects from './Projects';
-import img1 from '../../assect/Screenshot_26.png'
-import img2 from '../../assect/Screenshot_27.png'
-import img3 from '../../assect/Screenshot_28.png'
+// import img1 from '../../assect/Screenshot_26.png'
+// import img2 from '../../assect/Screenshot_27.png'
+// import img3 from '../../assect/Screenshot_28.png'
 
 const Project = () => {
-    const allProject = [{
-        id: 1,
-        img: 'img1',
-        describe: '',
+    const allProject = [
 
-    },
-    {
-        id: 2,
-        img: 'img2',
-        describe: '',
+        {
+            id: 3,
+            img: 'https://i.ibb.co/LJg7RTZ/Screenshot-26.png',
+            describe: '',
+            name: 'bes',
 
-    },
-    {
-        id: 3,
-        img: 'img3',
-        describe: '',
+        },
+        {
+            id: 4,
+            img: 'https://i.ibb.co/7SmCTKq/Screenshot-28.png',
+            describe: '',
+            name: 'bes',
 
-    },
-    {
-        id: 4,
-        img: '',
-        describe: '',
+        },
+        {
+            id: 1,
+            img: 'https://i.ibb.co/bFFCPVd/Screenshot-27.png',
+            name: 'bes',
+            describe: '',
 
-    },
+        },
+
+        {
+            id: 2,
+            img: 'https://i.ibb.co/9bpyJDj/juallary.png',
+            describe: '',
+            name: 'bes',
+
+        },
 
     ]
     return (
