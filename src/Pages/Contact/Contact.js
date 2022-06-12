@@ -1,8 +1,18 @@
 import React from 'react';
-import Modal from './Modal';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
+    const sendEmail = (e) => {
+        e.preventDefault();
 
+        emailjs.sendForm('service_tjvjjnt', 'template_0lgw5l1', e.target,
+            'DA9w5z8oRRndB68kK'
+        ).then(res => {
+            console.log(res)
+        }).catch(error => console.log(error));
+
+        ;
+    }
     return (
         <div className='lg:px-48 px-6'>
             <div className="hero min-h-screen" style={{ "backgroundImage": "url(https://i.ibb.co/qWwqsPP/gtch.jpg )" }}>
@@ -42,11 +52,14 @@ const Contact = () => {
                         <label for="my-modal-6" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
                         <h3 className="font-bold text-lg " >Contact Me </h3>
 
-                        <form >
+
+
+
+                        <form className='form-control' onSubmit={sendEmail}>
                             <label class="label">
                                 <span class="label-text">Full Name</span>
                             </label>
-                            <input type="text" placeholder="Type Full Name" class="input input-bordered input-error w-full max-w-xs" />
+                            <input type="text" name='name' placeholder="Type Full Name" class="input input-bordered input-error w-full max-w-xs" />
                             <label class="label">
                                 <span class="label-text">Phone Num</span>
                             </label>
@@ -54,11 +67,11 @@ const Contact = () => {
                             <label class="label">
                                 <span class="label-text">Email</span>
                             </label>
-                            <input type="text" placeholder="Type Email" class="input input-bordered input-error w-full max-w-xs" />
+                            <input type="text" name='email' placeholder="Type Email" class="input input-bordered input-error w-full max-w-xs" />
                             <label class="label">
                                 <span class="label-text">Message</span>
                             </label>
-                            <textarea class="textarea  w-full max-w-xs textarea-error " placeholder="Text Message"></textarea>
+                            <textarea class="textarea name='message' w-full max-w-xs textarea-error " placeholder="Text Message"></textarea>
                         </form>
 
                         <div className="modal-action">
