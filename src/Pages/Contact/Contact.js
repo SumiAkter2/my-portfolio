@@ -1,20 +1,32 @@
-import React from 'react';
-import emailjs from 'emailjs-com';
+
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+    const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
+        // 
+        emailjs.send('service_tjvjjnt', 'template_0lgw5l1', form.current, 'DA9w5z8oRRndB68kK')
+            .then(function (response) {
+                console.log('SUCCESS!', response.status, response.text);
+            }, function (error) {
+                console.log('FAILED...', error);
+            });
 
-        emailjs.sendForm('service_tjvjjnt', 'template_0lgw5l1', e.target,
-            'DA9w5z8oRRndB68kK'
-        ).then(res => {
-            console.log(res)
-        }).catch(error => console.log(error));
 
-        ;
     }
     return (
         <div className='lg:px-48 px-6'>
+            <form ref={form} onSubmit={sendEmail}>
+                <label>Name</label>
+                <input type="text" name="user_name" />
+                <label>Email</label>
+                <input type="email" name="user_email" />
+                <label>Message</label>
+                <textarea name="message" />
+                <input type="submit" value="Send" />
+            </form>
             <div className="hero min-h-screen" style={{ "backgroundImage": "url(https://i.ibb.co/qWwqsPP/gtch.jpg )" }}>
                 <div className="hero-overlay bg-opacity-70 text-center "> <h1 className='text-white text-5xl  font-bold mt-24 ' data-aos="fade-up"
                     data-aos-anchor-placement="bottom-center">Get In Touch</h1></div>
@@ -55,7 +67,7 @@ const Contact = () => {
 
 
 
-                        <form className='form-control' onSubmit={sendEmail}>
+                        <form ref={form} onSubmit={sendEmail}>
                             <label class="label">
                                 <span class="label-text">Full Name</span>
                             </label>
@@ -75,7 +87,7 @@ const Contact = () => {
                         </form>
 
                         <div className="modal-action">
-                            <label for="my-modal-6" className="btn">Submit <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24" className="fill-current"><path d="M511.6 36.86l-64 415.1c-1.5 9.734-7.375 18.22-15.97 23.05c-4.844 2.719-10.27 4.097-15.68 4.097c-4.188 0-8.319-.8154-12.29-2.472l-122.6-51.1l-50.86 76.29C226.3 508.5 219.8 512 212.8 512C201.3 512 192 502.7 192 491.2v-96.18c0-7.115 2.372-14.03 6.742-19.64L416 96l-293.7 264.3L19.69 317.5C8.438 312.8 .8125 302.2 .0625 289.1s5.469-23.72 16.06-29.77l448-255.1c10.69-6.109 23.88-5.547 34 1.406S513.5 24.72 511.6 36.86z" /></svg> </label>
+                            <button type='submit' for="my-modal-6" className="btn">Submit <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24" className="fill-current"><path d="M511.6 36.86l-64 415.1c-1.5 9.734-7.375 18.22-15.97 23.05c-4.844 2.719-10.27 4.097-15.68 4.097c-4.188 0-8.319-.8154-12.29-2.472l-122.6-51.1l-50.86 76.29C226.3 508.5 219.8 512 212.8 512C201.3 512 192 502.7 192 491.2v-96.18c0-7.115 2.372-14.03 6.742-19.64L416 96l-293.7 264.3L19.69 317.5C8.438 312.8 .8125 302.2 .0625 289.1s5.469-23.72 16.06-29.77l448-255.1c10.69-6.109 23.88-5.547 34 1.406S513.5 24.72 511.6 36.86z" /></svg> </button>
                         </div>
                     </div>
                 </div>
