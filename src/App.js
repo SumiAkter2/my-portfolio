@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
+
 import Navbar from './Pages/Navbar/Navbar';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home/Home';
@@ -8,22 +7,27 @@ import Contact from './Pages/Contact/Contact';
 import Blogs from './Pages/Blogs/Blogs';
 import Project from './Pages/Project/Project';
 import Footer from './Pages/Footer/Footer';
-import Modal from './Pages/Contact/Modal';
 import 'animate.css';
-import { useEffect } from 'react';
-
 import AOS from 'aos'
 import 'aos/dist/aos.css';
+// import ProjectDetails from './Pages/Project/ProjectDetails';
+import Tools from './Pages/Project/Tools';
+import Juallary from './Pages/Project/Juallary';
+import Makeup from './Pages/Project/Makeup';
+import Phone from './Pages/Project/Phone';
+import Center from './Pages/Project/Center';
+import Car from './Pages/Project/Car';
+
 
 function App() {
-  useEffect = () => {
-    AOS.init({
-      offset: 200,
-      duration: 600,
-      easing: 'ease-in-sine',
-      delay: 100,
-    });
-  }
+
+  AOS.init({
+    offset: 200,
+    duration: 600,
+    easing: 'ease-in-sine',
+    delay: 100,
+  });
+
 
   return (
     <div >
@@ -35,7 +39,12 @@ function App() {
         <Route path='/contact' element={<Contact />}></Route>
         <Route path='/blogs' element={<Blogs />}></Route>
         <Route path='/project' element={<Project />}></Route>
-
+        <Route path='/tools' element={<Tools />}></Route>
+        <Route path='/car' element={<Car />}></Route>
+        <Route path='/center' element={<Center />}></Route>
+        <Route path='/phone' element={<Phone />}></Route>
+        <Route path='/makeup' element={<Makeup />}></Route>
+        <Route path='/juallary' element={<Juallary />}></Route>
       </Routes>
       <Footer></Footer>
     </div>

@@ -3,7 +3,7 @@ import Skill from '../Project/Skill';
 import './About.css'
 const About = () => {
     return (
-        <div>
+        <div className='my-24'>
             {/* grid h-full px-12 mx-12 card bg-base-300 rounded-box place-items-center */}
             <h1 className='text-5xl font-bold text-center my-12 ' data-aos="fade-up">About <span className='text-primary'>Me</span></h1>
             <div className='grid lg:grid-cols-2'>
