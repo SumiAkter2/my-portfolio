@@ -3,36 +3,49 @@
         "id": 1,
         "img": "https://i.ibb.co/LJg7RTZ/Screenshot-26.png",
         "describe": "A tools manufacturing site.where people buy different kinds of tools and get review.",
-        "name": "Best Tools co"
+        "name": "Best Tools Co.",
+        "badge": "React, Mongodb, Firebase, Heroku"
     },
     {
         "id": 2,
         "img": "https://i.ibb.co/bFFCPVd/Screenshot-27.png",
         "name": "The Car Land",
-        "describe": "A Car Buying site.where people buy different kinds of tools and get review."
+        "describe": "A Car Buying site.where people buy different kinds of tools and get review.",
+        "badge": "React, Mongodb, Firebase, Heroku"
     },
     {
         "id": 3,
         "img": "https://i.ibb.co/Cvm5F1D/Screenshot-23.png",
         "describe": "Rose Community Center site.where people buy different kinds of tools and get review.",
-        "name": "Rose Community Center"
+        "name": "Rose Community Center",
+        "badge": "Html, Css, Netlify"
     },
     {
         "id": 4,
         "img": "https://i.ibb.co/7SmCTKq/Screenshot-28.png",
         "describe": "A MakeUp tools  site.where people buy different kinds of tools and get review.",
-        "name": "Exhibit Your Beauty"
+        "name": "Exhibit Your Beauty",
+        "badge": "React, Js, Netlify"
     },
     {
         "id": 5,
         "img": "https://i.ibb.co/HV1CypL/Screenshot-27.png",
         "describe": "A Phone Seeker  site.where people buy different kinds of tools and get review.",
-        "name": "Phone Seeker"
+        "name": "Phone Seeker",
+        "badge": "React, Js, Api, Netlify"
     },
     {
         "id": 6,
         "img": "https://i.ibb.co/t3pqwT0/Screenshot-31.png",
         "describe": "A Jewelry Empire site.where people buy different kinds of tools and get review.",
-        "name": "Jewelry Empire"
+        "name": "Jewelry Empire",
+        "badge": "React, Js, Netlify"
+    },
+    {
+        "id": 7,
+        "img": "https://i.ibb.co/Bc0PkWf/screencapture-joyful-vacherin-96c794-netlify-app-2022-06-17-15-01-12.png",
+        "describe": "This is a calculator created by javascript.",
+        "name": "Js calculator",
+        "badge": " Js, Bootstrap, Netlify"
     }
 ]

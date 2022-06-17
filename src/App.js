@@ -17,6 +17,7 @@ import Makeup from './Pages/Project/Makeup';
 import Phone from './Pages/Project/Phone';
 import Center from './Pages/Project/Center';
 import Car from './Pages/Project/Car';
+import Calculator from './Pages/Project/Calculator';
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
         <Route path='/phone' element={<Phone />}></Route>
         <Route path='/makeup' element={<Makeup />}></Route>
         <Route path='/juallary' element={<Juallary />}></Route>
+        <Route path='/calculator' element={<Calculator />}></Route>
       </Routes>
       <Footer></Footer>
     </div>

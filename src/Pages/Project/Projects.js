@@ -24,6 +24,9 @@ const Projects = ({ project }) => {
         if (id === 3) {
             navigate('/center')
         }
+        if (id === 7) {
+            navigate('/calculator')
+        }
     }
     return (
         <div className='mb-24'>
@@ -32,7 +35,7 @@ const Projects = ({ project }) => {
                 <div className="card-body">
                     <h2 className="card-title">
                         {project.name}
-                        <div className="badge badge-secondary"> React</div>
+                        <div className="badge py-6 px-4 badge-secondary"> {project.badge}</div>
                     </h2>
                     <p>{project.describe}</p>
                     <div className="card-actions justify-end   " data-aos="fade-right">

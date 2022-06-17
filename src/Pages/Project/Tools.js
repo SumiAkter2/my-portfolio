@@ -11,7 +11,7 @@ const Tools = () => {
             img5: 'https://i.ibb.co/MBX1cRG/best-tools-full.png',
             name: 'Best Tools Co',
             des: "A tools manufacturing site.There are admin panel and users.where people buy different kinds of tools and get reviews.Admin can make another user admin,can manage all product, can added any products",
-            fea: 'React, js, firebase, heroku, mongodb, react hook form, react route,aos,firebase hook form, html, css'
+            fea: 'React, js, firebase, heroku, mongodb, react hook form, react route,aos,firebase hook form, html, css, daisy ui. sweet alert.'
 
         }
     ]
@@ -21,14 +21,12 @@ const Tools = () => {
                 tools.map(tool => < >
                     <div className='grid lg:grid-cols-2  lg:px-12 my-6 gap-4 '>
                         <img src={tool.img5} className='min-w-full mx-auto' alt="" />
-
                         <div className='px-12'>
-
-                            <h3 class="font-bold text-4xl  ">{tool.name}</h3>
+                            <h3 class="font-bold text-4xl  pb-12">{tool.name}</h3>
                             <div className='grid lg:grid-cols-2 lg:gap-6'>
                                 <p class="py-4"><span className='text-2xl font-bold'>Description:</span>
                                     <br />    {tool.des} </p>
-                                <p className='text-2xl  font-bold'>
+                                <p className='text-2xl pt-12  font-bold'>
                                     <li>
                                         <a href="https://best-tools-co.web.app/">Live site</a></li>
                                     <li>
@@ -38,28 +36,11 @@ const Tools = () => {
                                 </p>
                                 <p class="py-4"><span className='text-2xl font-bold'>Feature:</span>
                                     <br /><li>{tool.fea}</li> </p>
-
-
                             </div>
-
                             <label for="my-modal-6" class="btn bg-indigo-400 modal-button text-primary  w-48 mt-6 ">More </label>
                         </div>
-
-
-
-
-
-
-
                     </div>
 
-
-
-
-
-
-
-                    {/* <!-- Put this part before </body> tag-- > */}
                     < input type="checkbox" id="my-modal-6" class="modal-toggle " />
                     <div class="modal ">
                         <div class="modal-box w-9/12">
@@ -70,8 +51,6 @@ const Tools = () => {
                                 <img src={tool.img2} className='min-h-full' alt="" />
                                 <img src={tool.img3} className='min-h-full' alt="" />
                             </div>
-
-
                         </div>
                     </div>
                 </>)
