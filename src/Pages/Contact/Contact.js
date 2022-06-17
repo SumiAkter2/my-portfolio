@@ -18,15 +18,7 @@ const Contact = () => {
     }
     return (
         <div className='lg:px-48 px-6'>
-            <form ref={form} onSubmit={sendEmail}>
-                <label>Name</label>
-                <input type="text" name="user_name" />
-                <label>Email</label>
-                <input type="email" name="user_email" />
-                <label>Message</label>
-                <textarea name="message" />
-                <input type="submit" value="Send" />
-            </form>
+
             <div className="hero min-h-screen" style={{ "backgroundImage": "url(https://i.ibb.co/qWwqsPP/gtch.jpg )" }}>
                 <div className="hero-overlay bg-opacity-70 text-center "> <h1 className='text-white text-5xl  font-bold mt-24 ' data-aos="fade-up"
                     data-aos-anchor-placement="bottom-center">Get In Touch</h1></div>
