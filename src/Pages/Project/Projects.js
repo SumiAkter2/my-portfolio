@@ -30,7 +30,7 @@ const Projects = ({ project }) => {
     }
     return (
         <div className='mb-24 '>
-            <div className="card  w-96 bg-gray-600 shadow-xl">
+            <div className="card  lg:w-96 bg-gray-600 shadow-xl">
                 <figure><img data-aos="zoom-in-down" src={project.img} className='shrink-0 h-full mt-6' alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">

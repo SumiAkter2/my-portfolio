@@ -8,12 +8,9 @@ const Banner = () => {
 
             <div className="grid lg:grid-cols-2 my-24  " >
                 <div className='rounded-tr-3xl  rounded-bl-3xl w-full text-center bg-black '>
-
-
                     <img src='my img2.jpg' style={{ 'height': '300px' }} className="rounded-tr-3xl rounded-bl-3xl mx-auto my-24 " alt='girls-pic' />
                 </div>
                 <div className='pt-12  px-12 mt-12'>
-
                     <h2 className="text-5xl font-bold uppercase animate-charcter " data-aos="fade-down"> I'm Sumi Akter.</h2>
                     <p className="pt-4 text-3xl font-bold text-secondary uppercase " data-aos="fade-left">-Junior Web Developer</p>
                     <p className='pt-4 ' data-aos="fade-left">I'm a creative and passionate Junior-Web developer from Bangladesh. Being a friendly person and eager to learn new technologies. I'm comfortable in English and a quick responder.</p>
