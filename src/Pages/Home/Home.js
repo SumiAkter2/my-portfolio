@@ -3,6 +3,7 @@ import Banner from './Banner';
 import About from '../About/About'
 import Project from '../Project/Project';
 import Contact from '../Contact/Contact';
+// import AnimationBg from './AnimationBg';
 
 const Home = () => {
     return (

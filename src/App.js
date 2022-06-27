@@ -10,7 +10,6 @@ import Footer from './Pages/Footer/Footer';
 import 'animate.css';
 import AOS from 'aos'
 import 'aos/dist/aos.css';
-// import ProjectDetails from './Pages/Project/ProjectDetails';
 import Tools from './Pages/Project/Tools';
 import Juallary from './Pages/Project/Juallary';
 import Makeup from './Pages/Project/Makeup';
@@ -18,6 +17,7 @@ import Phone from './Pages/Project/Phone';
 import Center from './Pages/Project/Center';
 import Car from './Pages/Project/Car';
 import Calculator from './Pages/Project/Calculator';
+import React from 'react';
 
 
 function App() {
@@ -34,6 +34,8 @@ function App() {
     <div >
 
       <Navbar></Navbar>
+
+
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/about' element={<About />}></Route>

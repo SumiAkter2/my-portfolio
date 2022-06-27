@@ -15,7 +15,7 @@ const Project = () => {
     console.log('lkj');
     return (
         <div>
-            <h1 className='text-5xl text-primary font-bold text-center my-24 ' data-aos="zoom-in">My All Projects</h1>
+            <h1 className='text-6xl text-primary font-bold lg:mx-96 my-24 animate-charcter'>My All Projects</h1>
 
             <div className='grid lg:grid-cols-3 gap-6 my-12 px-12'>
 

@@ -1,6 +1,6 @@
-.skill-img img {
-    width: 70px;
-    height: 70px;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 .animate-charcter {
@@ -20,7 +20,7 @@
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
     display: inline-block;
-    text-align: center;
+
 }
 
 @keyframes textclip {
